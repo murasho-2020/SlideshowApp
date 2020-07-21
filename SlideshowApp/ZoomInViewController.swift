@@ -20,13 +20,6 @@ class ZoomInViewController: UIViewController {
         imageView.image = selectedImg
     }
     
-    // @IBAction func onTapAction(_ sender: Any) {
-    // self.performSegue(withIdentifier: "toZoomIn", sender: nil)
-    // }
-    
-    
-    //
-    
     //  戻るボタンで１画面目に戻る
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -3,7 +3,7 @@
 //  SlideshowApp
 //
 //  Created by Shousei  Murakami on 2020/07/15.
-//  Copyright © 2020 shousei.murakami2. All rights reserved.
+//  Copyright © 2020 ,.murakami2. All rights reserved.
 //
 
 import UIKit
@@ -130,7 +130,16 @@ class ViewController: UIViewController {
    
    // 画像がタップされたとき処理が行えるように、Tap Gesture Recognizerを接続
     @IBAction func onTapAction(_ sender: Any) {
+    
          self.performSegue(withIdentifier: "toZoomIn", sender: nil)
+        
+       if self.timer != nil {
+            // タイマーを停止する
+        self.timer.invalidate()
+                          
+        // nil にして再び再生(nil の時にタイマー生成)
+        self.timer = nil
+        }
     }
     
     // 遷移元から遷移先にデータ(画像)を渡す

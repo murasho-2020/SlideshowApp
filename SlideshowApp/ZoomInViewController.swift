@@ -15,7 +15,7 @@ class ZoomInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         // Image Viewに画像を設定
         imageView.image = selectedImg
     }
